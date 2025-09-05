@@ -1,11 +1,11 @@
 import * as Font from 'expo-font';
-import { useEffect, useState } from 'react';
+import { useState, useEffect } from 'react';
 
-export default function useLoadFonts() {
+export default function useLoadFonts() { // ✅ теперь это default export
   const [loaded, setLoaded] = useState(false);
 
   useEffect(() => {
-    async function loadFonts() {
+    async function load() {
       await Font.loadAsync({
         'inter-regular': require('../assets/fonts/Inter_18pt-Regular.ttf'),
         'inter-light': require('../assets/fonts/Inter_18pt-Light.ttf'),
@@ -17,7 +17,7 @@ export default function useLoadFonts() {
       setLoaded(true);
     }
 
-    loadFonts();
+    load();
   }, []);
 
   return loaded;

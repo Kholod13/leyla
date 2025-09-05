@@ -1,21 +1,30 @@
-import React, { createContext, useState, useEffect } from 'react';
+// components/AuthContext.js
+import React, { createContext, useState, useEffect, useContext } from 'react';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 
 export const AuthContext = createContext();
 
-export const AuthProvider = ({ children }) => {
+const AuthProvider = ({ children }) => {
   const [isLoggedIn, setIsLoggedIn] = useState(null);
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     const checkAuth = async () => {
-      const token = await AsyncStorage.getItem('userToken');
-      setIsLoggedIn(!!token);
+      try {
+        const token = await AsyncStorage.getItem('userToken');
+        setIsLoggedIn(!!token);
+      } catch (error) {
+        console.error(error);
+        setIsLoggedIn(false);
+      } finally {
+        setLoading(false);
+      }
     };
     checkAuth();
   }, []);
 
-  const login = async () => {
-    await AsyncStorage.setItem('userToken', 'your-token');
+  const login = async (token = 'your-token') => {
+    await AsyncStorage.setItem('userToken', token);
     setIsLoggedIn(true);
   };
 
@@ -25,8 +34,13 @@ export const AuthProvider = ({ children }) => {
   };
 
   return (
-    <AuthContext.Provider value={{ isLoggedIn, login, logout }}>
+    <AuthContext.Provider value={{ isLoggedIn, login, logout, loading }}>
       {children}
     </AuthContext.Provider>
   );
 };
+
+export default AuthProvider;
+
+// кастомный хук для удобства
+export const useAuth = () => useContext(AuthContext);
