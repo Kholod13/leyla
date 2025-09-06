@@ -17,7 +17,7 @@
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/icons/logo_circle_LEYLA.png",
+        "foregroundImage": "./assets/icons/logo_square_LEYLA.png",
         "backgroundColor": "#ffffff"
       },
       "edgeToEdgeEnabled": true
