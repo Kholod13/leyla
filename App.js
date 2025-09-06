@@ -4,6 +4,7 @@ import useLoadFonts from './hooks/useLoadFonts';
 import AuthProvider from './components/AuthContext';
 import { UserProvider } from './components/UserContext';
 import Navigate from './navigation/navigate';
+import ProgressProvider from './components/ProgressContext';
 
 export default function App() {
   const fontLoaded = useLoadFonts();
@@ -17,10 +18,12 @@ export default function App() {
   }
 
   return (
-    <AuthProvider>
-      <UserProvider>
-        <Navigate />
-      </UserProvider>
-    </AuthProvider>
+    <ProgressProvider>
+      <AuthProvider>
+        <UserProvider>
+          <Navigate />
+        </UserProvider>
+      </AuthProvider>
+    </ProgressProvider>
   );
 }
