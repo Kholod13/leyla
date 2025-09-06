@@ -3,7 +3,7 @@ import React from 'react';
 import { View, ActivityIndicator } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { useAuth } from '../components/AuthContext';
-import { ProgressProvider } from '../components/ProgressContext';
+import ProgressProvider from '../components/ProgressContext';
 import AppStack from './stacks/AppStack';
 import AuthStack from './stacks/AuthStack';
 
