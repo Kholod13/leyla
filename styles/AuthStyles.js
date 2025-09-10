@@ -9,7 +9,8 @@ export const AuthStyles = StyleSheet.create({
         position: 'relative',
     },
     content: {
-
+        flex: 1,
+        justifyContent: 'flex-start',
     },
     title: {
         fontFamily: 'inter-bold',
@@ -25,6 +26,17 @@ export const AuthStyles = StyleSheet.create({
     },
     IconStyle: {
         marginRight: 10,
+    },
+    textError: {
+        fontFamily: 'inter-regular',
+        fontSize: 14,
+        color: '#EC5050',
+        marginBottom: 10,
+    },
+    linkText: { //#0388F5
+        fontFamily: 'inter-semiBold',
+        fontSize: 16,
+        textAlign: 'center',
     },
     //circles
     circle1: {
@@ -152,4 +164,97 @@ export const AuthStyles = StyleSheet.create({
         opacity: 0.7,
         transform: [{ rotate: '17deg' }],
     },
+    //inputs
+    inputText:{
+        fontFamily: 'inter-bold',
+        fontSize: 16,
+        color: '#4F4E50',
+    },
+    input : {
+        borderRadius: 16,
+        paddingLeft: 15,
+        paddingRight: 55,
+        paddingTop: 20,
+        paddingBottom: 20,
+        marginBottom: 5,
+        marginTop: 10,
+        fontFamily: 'inter-regular',
+        fontSize: 18,
+        color: 'black',
+        backgroundColor: 'white',
+        transition: 'border-color 2s ease',
+    },
+    inputFocused: {
+        borderColor: '#FF9D00',
+        borderWidth: 1,
+    },
+    inputWrapper: {
+        position: 'relative',
+        justifyContent: 'center'
+    },
+    eyeButton: {
+        position: 'absolute',
+        right: 15,
+        top: 25,
+        padding: 5,
+    },
+    eyeIcon: {
+        width: 25,
+        height: 25,
+        tintColor: '#918D8A',
+    },
+    //buttons
+    buttonLogin: {
+        backgroundColor: '#FF9D00',
+        fontSize: 18,
+        width: '100%',
+        padding: 20,
+        borderRadius: 100,
+        borderColor: '#E27500',
+        borderTopWidth: 0, 
+        borderRightWidth: 1,
+        borderBottomWidth: 3,
+        borderLeftWidth: 1,
+        marginBottom: 20,
+    },
+    buttonLoginText: {
+        fontFamily: 'inter-bold',
+        fontSize: 18,
+        color: 'white',
+        textAlign: 'center',
+    },
+    buttonRegister: {
+        backgroundColor: 'transparent',
+        fontSize: 18,
+        width: '100%',
+        padding: 20,
+        borderRadius: 100,
+        borderColor: '#FF9D00',
+        borderTopWidth: 1, 
+        borderRightWidth: 1,
+        borderBottomWidth: 3,
+        borderLeftWidth: 1,
+        marginBottom: 20,
+        marginTop: -10,
+    },
+    buttonRegisterText: {
+        color: '#FF9D00',
+        textAlign: 'center',
+        fontFamily: 'inter-bold',
+        fontSize: 18,
+    },
+    buttonDisabled: {
+        backgroundColor: '#FFCD9D',
+        fontSize: 18,
+        width: '100%',
+        padding: 20,
+        borderRadius: 100,
+        borderColor: '#FFB472',
+        borderTopWidth: 0, 
+        borderRightWidth: 1,
+        borderBottomWidth: 3,
+        borderLeftWidth: 1,
+        marginBottom: 20,
+    },
+    //
 });
