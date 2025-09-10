@@ -5,8 +5,11 @@ export const AuthStyles = StyleSheet.create({
         flex: 1,
         padding: 20,
         backgroundColor: '#F5F1EE',
-        justifyContent: 'center',
+        justifyContent: 'space-between',
         position: 'relative',
+    },
+    content: {
+
     },
     title: {
         fontFamily: 'inter-bold',
@@ -123,5 +126,30 @@ export const AuthStyles = StyleSheet.create({
     textBlock: {
         fontFamily: 'inter-regular',
         fontSize: 18,
+    },
+    //login circles
+    circleLogin1: {
+        width: 112,
+        height: 112,
+        borderRadius: 112 / 2,
+        justifyContent: 'center',
+        alignItems: 'center',
+        position: 'absolute',
+        top: 392,
+        left: -56,
+        opacity: 0.7,
+        transform: [{ rotate: '17deg' }],
+    },
+    circleLogin2: {
+        width: 169,
+        height: 169,
+        borderRadius: 169 / 2,
+        justifyContent: 'center',
+        alignItems: 'center',
+        position: 'absolute',
+        top: 500,
+        right: -90,
+        opacity: 0.7,
+        transform: [{ rotate: '17deg' }],
     },
 });
