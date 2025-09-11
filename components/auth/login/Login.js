@@ -172,8 +172,8 @@ export default function Login({ navigation }) {
       </View>
 
       {/* Footer */}
-      <View style={AuthStyles.footer}>
-        <View style={AuthStyles.footerTextWrapper}>
+      <View>
+        <View>
           <TouchableOpacity onPress={() => navigation.navigate('RegStep_0')}>
             <Text style={[AuthStyles.linkText, {marginBottom: 30}]}>
               Don't have an account? <Text style={{color: '#0388F5'}}>Sign Up</Text>
