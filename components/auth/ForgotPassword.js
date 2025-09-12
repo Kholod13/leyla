@@ -58,7 +58,7 @@ export default function ForgotPassword({navigation}) {
       const response = await fetch(ENDPOINTS.REMIND_PASSWORD, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ user_id: userId }), // используем сохранённый user_id
+        body: JSON.stringify({ email: mail }), // используем сохранённый user_id
       });
 
       const data = await response.json();
