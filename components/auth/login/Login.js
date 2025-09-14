@@ -64,12 +64,6 @@ export default function Login({ navigation }) {
         body: JSON.stringify({ password: value }),
       });
       const data = await response.json();
-
-      if (data.is_format_good === false) {
-        setPasswordError("Password must be 8+ chars, 1 uppercase, 1 number, 1 special char");
-      } else {
-        setPasswordError('');
-      }
     } catch (err) {
       console.error("Password check error:", err);
     }
