@@ -346,4 +346,33 @@ export const AuthStyles = StyleSheet.create({
         right: -80,
         opacity: 0.7,
     },
+    //progress bar
+    progressBarContainer: {
+        flexDirection: 'row',
+        alignItems: 'center',
+    },
+    //registration
+    //language selector
+    languageItem: {//block
+        flexDirection: 'row',
+        alignItems: 'center',
+        backgroundColor: 'white',
+        marginBottom: 10,
+        padding: 15,
+        borderRadius: 16,
+    },
+    languageItemSelected: {
+        borderColor: '#FF9D00',
+        borderWidth: 2,
+    },
+    radioContainer: {
+        justifyContent: 'flex-start',
+        alignItems: 'center',
+        flexDirection: 'row',
+    },
+    languageText: {
+        fontFamily: 'inter-regular',
+        fontSize: 18,
+        marginLeft: 10,
+    }
 });

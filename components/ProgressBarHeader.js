@@ -24,6 +24,9 @@ const styles = {
     container: {
         flexDirection: 'row',
         alignItems: 'center',
+        marginRight: 30,
+        marginLeft: 20,
+        marginTop: 30,
     },
     item: {
         height: 8,
