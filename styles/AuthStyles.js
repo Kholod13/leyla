@@ -11,6 +11,7 @@ export const AuthStyles = StyleSheet.create({
     content: {
         flex: 1,
         justifyContent: 'flex-start',
+        marginBottom: 10,
     },
     title: {
         fontFamily: 'inter-bold',
@@ -392,5 +393,11 @@ export const AuthStyles = StyleSheet.create({
         marginLeft: 10,
         fontSize: 16,
         color: '#716C69',
+    },
+    //interests
+    InterestsItem: {//block
+        backgroundColor: 'white',
+        padding: 15,
+        borderRadius: 16,
     },
 });
