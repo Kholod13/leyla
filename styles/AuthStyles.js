@@ -374,5 +374,23 @@ export const AuthStyles = StyleSheet.create({
         fontFamily: 'inter-regular',
         fontSize: 18,
         marginLeft: 10,
-    }
+    },
+    //language levels
+    languageLevelText: {
+        fontFamily: 'inter-bold',
+        fontSize: 22,
+        color: '#E27500',
+        marginHorizontal: 5,
+    },
+    languageLevelLabelText: {
+        fontFamily: 'inter-semiBold',
+        marginLeft: 10,
+        fontSize: 18,
+    },
+    languageLevelUnderLabelText: {
+        fontFamily: 'inter-regular',
+        marginLeft: 10,
+        fontSize: 16,
+        color: '#716C69',
+    },
 });

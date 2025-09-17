@@ -10,7 +10,7 @@ import { useUser } from '../../UserContext';
 
 export default function RegStep_0({ navigation }) {
   const { setProgress } = useProgress();
-  const { user, updateUser } = useUser();
+  const { updateUser } = useUser();
 
   const [languages, setLanguages] = useState([]);
   const [selectedLanguage, setSelectedLanguage] = useState(null);
