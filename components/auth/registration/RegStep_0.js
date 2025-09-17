@@ -31,7 +31,7 @@ export default function RegStep_0({ navigation }) {
       if (mounted) setLanguages(Array.isArray(data) ? data : []);
     } catch (err) {
       console.error('Ошибка загрузки языков:', err);
-      if (mounted) setError('Не удалось загрузить список языков');
+      if (mounted) setError('Server error');
     } finally {
       if (mounted) setLoading(false);
     }

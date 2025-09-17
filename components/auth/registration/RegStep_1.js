@@ -36,7 +36,7 @@ export default function RegStep_1({ navigation }) {
       }
     } catch (err) {
       console.error('Ошибка загрузки языков:', err);
-      if (mounted) setError('Не удалось загрузить список языков');
+      if (mounted) setError('Server error');
     } finally {
       if (mounted) setLoading(false);
     }

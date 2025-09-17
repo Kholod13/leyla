@@ -34,7 +34,7 @@ export default function RegStep_3({ navigation }) {
         }
       } catch (err) {
         console.error('Ошибка загрузки интересов:', err);
-        if (mounted) setError('Не удалось загрузить список интересов');
+        if (mounted) setError('Server error');
       } finally {
         if (mounted) setLoading(false);
       }
