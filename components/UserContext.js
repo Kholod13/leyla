@@ -12,7 +12,8 @@ export const UserProvider = ({ children }) => {
       nativeLanguage: '',
       learnLanguage: '',
       levelLanguage: '',
-      interests: [],
+      interestsIds: [],
+      interestsNames: [],
     }
   }); // объект текущего пользователя
 
@@ -69,7 +70,8 @@ export const UserProvider = ({ children }) => {
         nativeLanguage: '',
         learnLanguage: '',
         levelLanguage: '',
-        interests: [],
+        interestsIds: [],
+        interestsNames: [],
       },
     });
     try {

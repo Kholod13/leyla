@@ -63,7 +63,8 @@ export default function RegStep_3({ navigation }) {
 
     updateUser({
       Settings: {
-        interests: selectedLabels, // сохраняем массив строк
+        interestsIds: selectedInterests, // сохраняем ids
+        interestsNames: selectedLabels, // сохраняем names
       },
     });
 

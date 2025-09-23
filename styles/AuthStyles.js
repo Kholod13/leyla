@@ -170,6 +170,7 @@ export const AuthStyles = StyleSheet.create({
         fontFamily: 'inter-bold',
         fontSize: 16,
         color: '#4F4E50',
+        marginTop: 10,
     },
     input : {
         borderRadius: 16,
@@ -436,5 +437,30 @@ export const AuthStyles = StyleSheet.create({
         right: -70,
         opacity: 0.7,
         transform: [{ rotate: '150deg' }],
+    },
+    //circles for password page
+    circlePassPage1: {
+        width: 188,
+        height: 188,
+        borderRadius: 188 / 2,
+        justifyContent: 'center',
+        alignItems: 'center',
+        position: 'absolute',
+        top: 542,
+        left: -116,
+        opacity: 0.7,
+        transform: [{ rotate: '17deg' }],
+    },
+    circlePassPage2: {
+        width: 100,
+        height: 100,
+        borderRadius: 100 / 2,
+        justifyContent: 'center',
+        alignItems: 'center',
+        position: 'absolute',
+        top: 430,
+        right: -60,
+        opacity: 0.7,
+        transform: [{ rotate: '17deg' }],
     },
 });
